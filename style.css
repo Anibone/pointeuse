@@ -1,0 +1,27 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  border-top: 12px solid red;
+  border-left: 12px solid red;
+  border-bottom: 12px solid green;
+  border-right: 12px solid green;
+}
+
+hr{
+  width: 34%;
+  border-top: 1px dashed black;
+  margin-left: 3px;
+;
+}
+
+hr.titre{
+  width: 28%;
+  border-top: 1px solid black;
+}
+.col-xs{
+  width: 50%;
+  margin-left: 20px;
+
+}
