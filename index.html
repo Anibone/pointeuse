@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:\Users\hugoc\Desktop\pointeuse\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Projet Hugo</title>
+
+  </head>
+  <body>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="col-sm">
+        <h2>Mémento</h2>
+        <hr class="titre" align=left />
+      </div>
+<div class="col-xs">
+      <p>
+  L’intelligence collective permet à une communauté de converger vers un but commun.<br/><br/>
+  Avoir un rôle est nécessaire ; avoir un travail ne l’est pas.<br/><br/>
+  La démocratie ne se limite pas aux seules élections.
+  </p>
+</div>
+
+</div>
+    <div class="col-sm">
+
+  	<form action="">
+      <input type=radio id=choix1 name=Paquay value=acteursocial checked=checked> Acteur social <br/>
+      <input type=radio id=choix2 name=Paquay value=chercheur> Chercheur <br/>
+      <input type=radio id=choix3 name=Paquay value=maitreinstruit> Maître instruit <br/>
+      <input type=radio id=choix4 name=Paquay value=personneenrelation> Personne en relation <br/>
+      <input type=radio id=choix5 name=Paquay value=pedagogue> Pédagogue <br/>
+      <input type=radio id=choix6 name=Paquay value=praticien> Praticien<br/><hr align=left/>
+
+      <input type=radio id=choix1 name=Taille value=pourmoi> Pour moi <br/>
+      <input type=radio id=choix2 name=Taille value=pourlaclasse checked=checked> Pour la classe <br/>
+      <input type=radio id=choix3 name=Taille value=unpeuplusloin > Un peu plus loin <br/><hr align=left/>
+
+      <input type=radio id=choix1 name=Couleur value=applications> Applications concrètes <br/>
+      <input type=radio id=choix2 name=Couleur value=ideologie checked=checked> Idéologie <br/>
+
+
+      <input type="button" name="choix" value="Résultat" onclick="returnValue()">
+  	</form>
+
+  </div>
+ </div>
+
+    <script>
+      function returnValue(){
+        var valeurPaquay = document.querySelector('input[name=Paquay]:checked').value;
+        var valeurCouleur = document.querySelector('input[name=Couleur]:checked').value;
+        var valeurTaille = document.querySelector('input[name=Taille]:checked').value;
+        var valeur=valeurPaquay + valeurTaille + valeurCouleur ;
+
+
+        switch(valeur){
+          case "acteursocialpourlaclasseideologie":
+            var options = "width=651, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/AxkOH29.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+            case "acteursocialpourlaclasseapplications":
+              var options = "width=651, height=827";
+              var win = window.open("", "", options);
+              var img = document.createElement("img");
+              img.src = 'https://i.imgur.com/tZ2wLLg.jpg';
+              win.document.body.appendChild( img );
+              break;
+        }
+
+
+      }
+  	</script>
+  </body>
+</html>
