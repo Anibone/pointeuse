@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <title>La pointeuse pédagogique</title>
+
+  </head>
+  <body>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="col-sm">
+        <br/><h2>Mémento</h2>
+        <hr class="titre" align=left />
+      </div>
+<div class="col-xs">
+      <p>
+  L’intelligence collective permet à une communauté de converger vers un but commun.<br/><br/>
+  Avoir un rôle est nécessaire ; avoir un travail ne l’est pas.<br/><br/>
+  La démocratie ne se limite pas aux seules élections.
+  </p>
+</div>
+
+</div>
+    <div class="col-sm">
+
+  	<form action="">
+      <br/>
+      <input type=radio id=choix1 name=Paquay value=acteursocial checked=checked> Acteur social <br/>
+      <input type=radio id=choix2 name=Paquay value=chercheur> Chercheur <br/>
+      <input type=radio id=choix3 name=Paquay value=maitreinstruit> Maitre instruit <br/>
+      <input type=radio id=choix4 name=Paquay value=personneenrelation> Personne en relation <br/>
+      <input type=radio id=choix5 name=Paquay value=pedagogue> Pédagogue <br/>
+      <input type=radio id=choix6 name=Paquay value=praticien> Praticien <br/><hr align=left/>
+
+      <input type=radio id=choix1 name=Taille value=pourmoi checked=checked> Pour moi <br/>
+      <input type=radio id=choix2 name=Taille value=pourlaclasse > Pour la classe <br/>
+      <input type=radio id=choix3 name=Taille value=unpeuplusloin > Un peu plus loin <br/><hr align=left/>
+
+      <input type=radio id=choix2 name=Couleur value=ideologie checked=checked> Idéologie <br/>
+      <input type=radio id=choix1 name=Couleur value=applications> Applications concrètes <br/><br/>
+
+      <input type="button" class="btn btn-outline-dark" name="choix" value="Résultat" onclick="returnValue()">
+
+  	</form>
+    <br/>
+
+  </div>
+ </div>
+
+    <script>
+      function returnValue(){
+        var valeurPaquay = document.querySelector('input[name=Paquay]:checked').value;
+        var valeurCouleur = document.querySelector('input[name=Couleur]:checked').value;
+        var valeurTaille = document.querySelector('input[name=Taille]:checked').value;
+        var valeur=valeurPaquay + valeurTaille + valeurCouleur ;
+
+        switch(valeur){
+
+          //acteur social
+          case "acteursocialpourmoiideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/0js3TLS.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+          case "acteursocialpourmoiapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/JpIOg9r.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+          case "acteursocialpourlaclasseideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/AxkOH29.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+          case "acteursocialpourlaclasseapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/tZ2wLLg.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+          case "acteursocialunpeuplusloinideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/XGCnDqQ.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+          case "acteursocialunpeuplusloinapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/Cwhj6Sz.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        //chercheur
+        case "chercheurpourmoiideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/4WsKCjX.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "chercheurpourmoiapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/CM1eBz4.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "chercheurpourlaclasseideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/ILZKE6T.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "chercheurpourlaclasseapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/0UVYzJ4.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "chercheurunpeuplusloinideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/8ECf18Y.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "chercheurunpeuplusloinapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/cfl8KOC.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        //maitreinstruit
+        case "maitreinstruitpourmoiideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/VCHFPih.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "maitreinstruitpourmoiapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/C5DZxJE.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "maitreinstruitpourlaclasseideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/yUqanek.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "maitreinstruitpourlaclasseapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/zWdLerX.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "maitreinstruitunpeuplusloinideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/A8dRKxj.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "maitreinstruitunpeuplusloinapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/UnTaIbq.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        //personneenrelation
+        case "personneenrelationpourmoiideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/jy0tyMb.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "personneenrelationpourmoiapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/YvVxCpi.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "personneenrelationpourlaclasseideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/JGefWVP.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "personneenrelationpourlaclasseapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/svGca95.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "personneenrelationunpeuplusloinideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/sLUJnnK.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "personneenrelationunpeuplusloinapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/OVq2YhX.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        // pedagogue
+        case "pedagoguepourmoiideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/Y1TfEqB.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "pedagoguepourmoiapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/ovVGOy7.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "pedagoguepourlaclasseideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/7CkyNrb.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "pedagoguepourlaclasseapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/NBWDQoq.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "pedagogueunpeuplusloinideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/s0h6yJX.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "pedagogueunpeuplusloinapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/s4uIfu5.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        // praticien
+        case "praticienpourmoiideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/NRjqdra.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "praticienpourmoiapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/PzVvCgx.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "praticienpourlaclasseideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/mEcNpG8.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "praticienpourlaclasseapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/qvDNnU0.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "praticienunpeuplusloinideologie":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/WoSb98q.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        case "praticienunpeuplusloinapplications":
+            var options = "width=626, height=827";
+            var win = window.open("", "", options);
+            var img = document.createElement("img");
+            img.src = 'https://i.imgur.com/XsvKqDT.jpg';
+            win.document.body.appendChild( img );
+            break;
+
+        }
+
+      }
+  	</script>
+  </body>
+</html>
